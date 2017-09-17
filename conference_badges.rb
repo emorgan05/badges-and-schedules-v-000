@@ -1,3 +1,6 @@
+badges = []
+rooms = []
+
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
@@ -5,6 +8,7 @@ end
 def assign_rooms(attendees)
   attendees.each_with_index do |attendee, index|
     number = index + 1
-    attendees.push("Hello #{attendee}! You'll be assigned to room #{number}!")
+    rooms.push("Hello #{attendee}! You'll be assigned to room #{number}!")
   end
+  return rooms
 end
