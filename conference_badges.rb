@@ -18,3 +18,8 @@ def assign_rooms(attendees)
   end
   return rooms
 end
+
+def printer(batch, rooms)
+  puts batch
+  puts rooms
+end
